@@ -39,7 +39,7 @@ class LinkChecker:
             }
             
             # Get webpage content
-            page_result = requests.get(web_page, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
+            page_result = requests.get(web_page, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}, timeout=10)
             page_result.raise_for_status()
             
             # Parse links
