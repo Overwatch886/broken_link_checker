@@ -33,18 +33,15 @@
 ## 📂 Project Structure
 
 ```
-BROKEN LINK CHECKER
+SEO LINK HEALTH CHECKER
 │
-├── static/           # Static files (CSS, JS, images)
 ├── templates/        # Flask web templates
-│   ├── index.html    # Home page
-│   └── results.html  # Scan/results page
-├── app.py            # Flask app entry point
-├── checker.py        # Main crawling and checking logic
+│   └── index.html    # Home page
+├── app.py            # Main Flask application
 ├── requirements.txt  # Dependency list
-├── Dockerfile        # Docker setup for deployment
-├── .dockerignore     # Ignored files for Docker builds
+├── Procfile          # Railway deployment configuration
 └── README.md         # Project documentation
+
 ```
 
 ### Core Files
