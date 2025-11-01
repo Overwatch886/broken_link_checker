@@ -39,7 +39,11 @@ class LinkChecker:
             }
             
             # Get webpage content
+<<<<<<< HEAD
             page_result = requests.get(web_page, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
+=======
+            page_result = requests.get(web_page, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}, timeout=10)
+>>>>>>> bdb6db5cf3133fcbb5e7ab2b89c1f8ed53f2b311
             page_result.raise_for_status()
             
             # Parse links
@@ -156,4 +160,8 @@ def download_csv(session_id):
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
+<<<<<<< HEAD
     app.run(host='0.0.0.0', port=port, debug=False, threaded=True)
+=======
+    app.run(host='0.0.0.0', port=port, debug=False, threaded=True)
+>>>>>>> bdb6db5cf3133fcbb5e7ab2b89c1f8ed53f2b311
